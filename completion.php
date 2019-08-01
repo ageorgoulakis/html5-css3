@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Completion Per Day</title>
+	<title>Completion Per Page</title>
 </head>
 <body>
 	<div align="left">
