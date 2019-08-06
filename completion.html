@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Completion Per Page</title>
+	<style type="text/css">
+		td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div align="left">
+	<table>
+		<script type="text/javascript">
+			const length = 939;
+			for(let count=1; count<=length; count++){
+				let result = count/length*100;
+				document.write("<tr>");
+				if(Number(count)<10){
+					document.write("<td>Ends at page "+ count +". "+ result.toPrecision(2) +"% completed.</td>");
+				}
+				else if(Number(count)<94){
+					document.write("<td>Ends at page "+ count +". "+ result.toPrecision(3) +"% completed.</td>");
+				}
+				else if(count!=length){
+					document.write("<td>Ends at page "+ count +". "+ result.toPrecision(4) +"% completed.</td>");
+				}
+				else{
+					document.write("<td>Ends at page "+ count +". "+ result +"% completed.</td>");
+				}
+				document.write("</tr>");
+			}
+		</script>
+	</table>
+	<!-- JS of getting today's date.
+	<script type="text/javascript">
+		const date = new Date();
+		document.write("<strong>End of the Book. "+ date +".</strong>");
+	</script>
+	-->
+	</div>
+</body>
+</html>
