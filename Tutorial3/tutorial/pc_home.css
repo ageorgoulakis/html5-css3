@@ -18,6 +18,8 @@ body {
 	min-width: 640px;
 	max-width: 960px;
 	width: 95%;
+	
+	/* this will automatically placed in center the targetted HTML element */ 
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -72,6 +74,11 @@ footer {
 	clear: left;
 }
 
+footer::after {
+	clear: both;
+	content: "";
+	display: table;
+}
 footer > nav.verticalNavigation {
 	float: left;
 	width: 22%;

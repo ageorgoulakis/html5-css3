@@ -111,6 +111,13 @@ p {
    font-size: 0.9em;
 }
 
+/* Drop Cap Style */
+p:first-of-type::first-letter {
+	font-size: 4em;
+	float: left;
+	line-height: 0.8;
+}
+
 /* Left Column Styles */
 
 img {
